@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Silkscreen:wght@400;700&display=swap");
+
+/* font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+
+/* Base Styles */
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Styles */
+header {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  color: #000000; /* Default text color for light mode */
+  padding: 10px 20px; /* Adjusted padding for reduced side margins */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Limit the width to prevent overflow */
+  margin: 0 auto; /* Center the content */
+  box-sizing: border-box;
+}
+
+.team-name {
+  font-size: 25px;
+  margin: 0;
+  color: inherit; /* Inherit color from header */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.nav a {
+  color: #000000; /* Default link color for light mode */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.nav a + .theme-switcher {
+  margin-left: 30px; /* Space between "About Us" and theme switcher */
+}
+
+.theme-switcher img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Main Block Styles */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  margin-top: 60px; /* Space for header */
+  margin-bottom: 60px; /* Space for footer */
+}
+
+/* Container Styles */
+.container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly transparent background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 90%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Styles for h1 inside the container */
+.container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000000; /* Default text color for light mode */
+}
+
+/* Styles for input fields inside the container */
+.container input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Styles for buttons inside the container */
+.container button {
+  background-color: #149414;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container button:hover {
+  background-color: #0e6b0e;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  transition: background-color 0.5s ease;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.close-btn:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#certificate-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #149414;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.download-btn:hover {
+  background-color: #0e6b0e;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: linear-gradient(135deg, #333, #555);
+}
+
+/* Header and Footer for Dark Mode */
+.dark-mode header {
+  background: rgba(0, 0, 0, 0.3); /* Darker glassmorphism effect */
+  color: #ffffff; /* Text color for dark mode */
+}
+
+.dark-mode footer {
+  background: rgba(0, 0, 0, 0.3); /* Darker glassmorphism effect */
+  color: #ffffff; /* Text color for dark mode */
+}
+
+/* Header Links for Dark Mode */
+.dark-mode .nav a {
+  color: #ffffff; /* Link color for dark mode */
+}
+
+/* Container Styles for Dark Mode */
+.dark-mode .container {
+  background-color: rgba(50, 50, 50, 0.9);
+  color: #ffffff;
+}
+
+/* Input Fields and Button Styles for Dark Mode */
+.dark-mode input[type="text"] {
+  border-color: #666;
+  color: #ffffff; /* Text color for input fields in dark mode */
+  background-color: #333; /* Background color for input fields in dark mode */
+}
+
+.dark-mode button {
+  background-color: #444;
+  color: #ffffff; /* Text color for buttons in dark mode */
+}
+
+.dark-mode button:hover {
+  background-color: #333;
+}
+
+.dark-mode .modal {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode .modal-content {
+  background-color: #444;
+  color: #ffffff; /* Text color for modal in dark mode */
+}
+
+.dark-mode .download-btn {
+  background-color: #444;
+  color: #ffffff; /* Text color for download button in dark mode */
+}
+
+.dark-mode .download-btn:hover {
+  background-color: #333;
+}
+
+/* Footer Styles */
+footer {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Responsive Styles */
+@media (max-width: 750px) {
+  .modal-content {
+    width: 95%;
+    /* Adjust margin for very small screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 10% auto; /* Adjusted margin for smaller screens */
+  }
+}
+
+@media (max-width: 411px) {
+  .modal-content {
+    width: 95%;
+    margin: 5% auto; /* Further adjustment for very small screens */
+  }
+}
+
+@media (max-width: 650px) {
+  .header-content {
+    flex-direction: column; /* Stack team name and nav vertically */
+    align-items: center; /* Center the content */
+    text-align: center; /* Center text */
+  }
+
+  .team-name {
+    margin-bottom: 10px; /* Space between team name and nav */
+  }
+
+  .nav {
+    justify-content: center; /* Center nav items */
+    margin-top: 0; /* Remove top margin */
+  }
+}

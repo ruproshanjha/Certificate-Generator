@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <h1 class="team-name">Coding Wizard</h1>
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <div class="theme-switcher">
+            <img src="sun.png" alt="Theme Switch" />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Block -->
+    <div class="main">
+      <!-- Main Content -->
+      <div class="container">
+        <h2>Certificate Generator</h2>
+        <form id="certificate-form">
+          <input
+            type="text"
+            id="userName"
+            placeholder="Enter your name"
+            required
+          />
+          <button type="submit">Generate Certificate</button>
+        </form>
+      </div>
+
+      <!-- Modal for certificate preview -->
+      <div id="certificate-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Certificate Preview</h2>
+          <img id="certificate-img" src="" alt="Certificate" />
+          <a
+            id="download-link"
+            href=""
+            download="certificate.png"
+            class="download-btn"
+            >Download Your Certificate</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made with ❤ by Team Coding Wizards</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
