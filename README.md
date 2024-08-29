@@ -1,6 +1,3 @@
-Here's the `README.md` file with the detailed explanation of the code for your Certificate Generator project:
-
-```markdown
 # Certificate Generator
 
 This project is a web-based Certificate Generator that allows users to input their names and generate a personalized certificate. The generator features a preview modal for users to view their certificate before downloading it. The website supports both light and dark themes with a theme switcher icon.
