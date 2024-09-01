@@ -17,8 +17,8 @@ document
     const ctx = canvas.getContext("2d");
 
     // Set the canvas size
-    canvas.width = 600;
-    canvas.height = 400;
+    canvas.width = 1080;
+    canvas.height = 1920;
 
     // Load the background image
     const backgroundImage = new Image();
