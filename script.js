@@ -17,8 +17,8 @@ document
     const ctx = canvas.getContext("2d");
 
     // Set the canvas size
-    canvas.width = 1920;
-    canvas.height = 1080;
+    canvas.width = 600;
+    canvas.height = 400;
 
     // Load the background image
     const backgroundImage = new Image();
@@ -29,7 +29,7 @@ document
       ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
 
       // Set font style for the user's name
-      ctx.font = '800px "Brush Script MT", cursive'; // Cursive font
+      ctx.font = '40px "Brush Script MT", cursive'; // Cursive font
       ctx.fillStyle = "#000000"; // Black color
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
