@@ -29,7 +29,7 @@ document
       ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
 
       // Set font style for the user's name
-      ctx.font = '80px "Brush Script MT", cursive'; // Cursive font
+      ctx.font = '800px "Brush Script MT", cursive'; // Cursive font
       ctx.fillStyle = "#000000"; // Black color
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
