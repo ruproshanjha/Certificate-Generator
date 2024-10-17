@@ -11,7 +11,7 @@ This project is a web-based Certificate Generator that allows users to input the
 5. [CSS Styling](#css-styling)
 6. [JavaScript Functionality](#javascript-functionality)
 7. [How to Run the Project](#how-to-run-the-project)
-8. [Future Enhancements](#future-enhancements)
+8. [About the Devloper](#about-the-devloper)
 
 ## Introduction
 
@@ -171,9 +171,10 @@ The `script.js` file handles the core functionality of the Certificate Generator
 3. Enter a name in the input field and click "Generate Certificate".
 4. Preview the certificate in the modal and click "Download Your Certificate" to save it as a PNG.
 
-## Future Enhancements
+## About The Devloper
 
-- Add more customization options for certificates, such as different fonts and colors.
-- Allow users to upload their own certificate templates.
-- Implement backend integration to store generated certificates in a database.
+- Rup Roshan Jha 
+- jharup9@gmail.com
 
+
+Thank You 😊 
